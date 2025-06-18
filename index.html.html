@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SparkCoin</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    /* Ensure the background covers the entire page */
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=2072&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      min-height: 100vh;
+    }
+    /* Style for language content to hide/show based on selection */
+    .lang-content:not(.active) {
+      display: none;
+    }
+    /* Style for social link labels */
+    .social-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .social-link span {
+      font-size: 0.9rem;
+    }
+    /* Bold style for contract, logo, and manifesto labels */
+    .contract-label, .logo-label, .manifesto-label {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body class="text-white p-6">
+  <div class="max-w-4xl mx-auto space-y-12">
+    <!-- Language Selection -->
+    <div class="flex justify-end space-x-4">
+      <button class="lang-btn px-4 py-2 rounded-lg bg-yellow-500 text-black hover:bg-yellow-400 transition-colors" data-lang="en">EN</button>
+      <button class="lang-btn px-4 py-2 rounded-lg bg-gray-700 text-white hover:bg-yellow-400 transition-colors" data-lang="ru">RU</button>
+      <button class="lang-btn px-4 py-2 rounded-lg bg-gray-700 text-white hover:bg-yellow-400 transition-colors" data-lang="de">DE</button>
+      <button class="lang-btn px-4 py-2 rounded-lg bg-gray-700 text-white hover:bg-yellow-400 transition-colors" data-lang="es">ES</button>
+    </div>
+
+    <!-- English Content -->
+    <div class="lang-content active" data-lang="en">
+      <h1 class="text-5xl font-bold text-center text-yellow-400 animate-fade-in">SparkCoin</h1>
+      <div class="bg-gray-800 bg-opacity-75 p-6 rounded-lg shadow-lg mt-6 animate-slide-up">
+        <h2 class="text-2xl font-semibold mb-4">SparkCoin Description</h2>
+        <p class="text-lg">
+          SparkCoin is an ERC-20 token deployed on the Base blockchain (Optimism's L2 solution) designed for use within the Spark decentralized ecosystem. The contract includes staking mechanisms with a variable reward rate that automatically adapts to the amount of staked liquidity. Users can receive rewards for staking, participate in DAO voting, and interact with internal services. The project uses IPFS to store technical documentation and encrypted messages. The token is integrated with Aerodrome DEX to provide AMM liquidity and market trading. It also implements transaction volume limits, flexible reward pool management, and built-in security mechanisms (ReentrancyGuard, Pausable).
+        </p>
+      </div>
+      <div class="bg-gray-800 bg-opacity-75 p-6 rounded-lg shadow-lg mt-6 animate-slide-up">
+        <h2 class="text-2xl font-semibold mb-4">What is Spark (SPRK)?</h2>
+        <p class="text-lg">
+          Spark (SPRK) is a utility token designed to power decentralized AI ecosystems. It allows users to access AI tools, participate in governance, and earn rewards for supporting and improving the network.
+        </p>
+        <h3 class="text-xl font-semibold mt-4 mb-2">Why use it?</h3>
+        <ul class="list-disc list-inside text-lg">
+          <li>Pay for AI services and automation</li>
+          <li>Earn rewards through staking and contributions</li>
+          <li>Vote on AI development and community proposals</li>
+          <li>Be part of a transparent, decentralized AI future</li>
+        </ul>
+        <h3 class="text-xl font-semibold mt-4 mb-2">Spark connects people and AI</h3>
+        <p class="text-lg">
+          SPRK bridges the gap between AI and communities — giving real ownership, choice, and incentives to users, not corporations.
+        </p>
+      </div>
+      <div class="text-center">
+        <a href="https://t.me/SPRKcoin2025" target="_blank" rel="noopener noreferrer" class="bg-yellow-400 text-black px-6 py-3 text-lg rounded-xl hover:bg-yellow-500 transition-colors inline-block">
+          Join Now
+        </a>
+      </div>
+    </div>
+
+    <!-- Russian Content -->
+    <div class="lang-content" data-lang="ru">
+      <h1 class="text-5xl font-bold text-center text-yellow-400 animate-fade-in">СпаркКоин</h1>
+      <div class="bg-gray-800 bg-opacity-75 p-6 rounded-lg shadow-lg mt-6 animate-slide-up">
+        <h2 class="text-2xl font-semibold mb-4">Описание СпаркКоин</h2>
+        <p class="text-lg">
+          СпаркКоин — это токен стандарта ERC-20, развернутый на блокчейне Base (L2-решении Optimism), предназначенный для использования в децентрализованной экосистеме Spark. Контракт включает механизмы стейкинга с переменной ставкой вознаграждения, которая автоматически адаптируется к объему застейканной ликвидности. Пользователи могут получать вознаграждения за стейкинг, участвовать в голосовании DAO и взаимодействовать с внутренними сервисами. Проект использует IPFS для хранения технической документации и зашифрованных сообщений. Токен интегрирован с Aerodrome DEX для обеспечения ликвидности AMM и рыночной торговли. Также реализованы лимиты объема транзакций, гибкое управление пулом вознаграждений и встроенные механизмы безопасности (ReentrancyGuard, Pausable).
+        </p>
+      </div>
+      <div class="bg-gray-800 bg-opacity-75 p-6 rounded-lg shadow-lg mt-6 animate-slide-up">
+        <h2 class="text-2xl font-semibold mb-4">Что такое Spark (SPRK)?</h2>
+        <p class="text-lg">
+          Spark (SPRK) — это утилитарный токен, предназначенный для поддержки децентрализованных экосистем искусственного интеллекта. Он позволяет пользователям получать доступ к инструментам ИИ, участвовать в управлении и зарабатывать вознаграждения за поддержку и улучшение сети.
+        </p>
+        <h3 class="text-xl font-semibold mt-4 mb-2">Зачем его использовать?</h3>
+        <ul class="list-disc list-inside text-lg">
+          <li>Оплата услуг ИИ и автоматизации</li>
+          <li>Заработок вознаграждений через стейкинг и вклад в сеть</li>
+          <li>Голосование по вопросам развития ИИ и предложений сообщества</li>
+          <li>Участие в прозрачном, децентрализованном будущем ИИ</li>
+        </ul>
+        <h3 class="text-xl font-semibold mt-4 mb-2">Spark соединяет людей и ИИ</h3>
+        <p class="text-lg">
+          SPRK устраняет разрыв между ИИ и сообществами, предоставляя пользователям реальное владение, выбор и стимулы, а не корпорациям.
+        </p>
+      </div>
+      <div class="text-center">
+        <a href="https://t.me/SPRKcoin2025" target="_blank" rel="noopener noreferrer" class="bg-yellow-400 text-black px-6 py-3 text-lg rounded-xl hover:bg-yellow-500 transition-colors inline-block">
+          Присоединиться
+        </a>
+      </div>
+    </div>
+
+    <!-- German Content -->
+    <div class="lang-content" data-lang="de">
+      <h1 class="text-5xl font-bold text-center text-yellow-400 animate-fade-in">SparkCoin</h1>
+      <div class="bg-gray-800 bg-opacity-75 p-6 rounded-lg shadow-lg mt-6 animate-slide-up">
+        <h2 class="text-2xl font-semibold mb-4">SparkCoin Beschreibung</h2>
+        <p class="text-lg">
+          SparkCoin ist ein ERC-20-Token, der auf der Base-Blockchain (Optimisms L2-Lösung) eingesetzt wird und für die Nutzung im dezentralen Spark-Ökosystem entwickelt wurde. Der Vertrag umfasst Staking-Mechanismen mit einer variablen Belohnungsrate, die sich automatisch an die Menge der gestakten Liquidität anpasst. Nutzer können Belohnungen für das Staking erhalten, an DAO-Abstimmungen teilnehmen und mit internen Diensten interagieren. Das Projekt verwendet IPFS zur Speicherung technischer Dokumentationen und verschlüsselter Nachrichten. Der Token ist in die Aerodrome DEX integriert, um AMM-Liquidität und Markthandel bereitzustellen. Außerdem implementiert er Transaktionsvolumenbegrenzungen, flexibles Management des Belohnungspools und integrierte Sicherheitsmechanismen (ReentrancyGuard, Pausable).
+        </p>
+      </div>
+      <div class="bg-gray-800 bg-opacity-75 p-6 rounded-lg shadow-lg mt-6 animate-slide-up">
+        <h2 class="text-2xl font-semibold mb-4">Was ist Spark (SPRK)?</h2>
+        <p class="text-lg">
+          Spark (SPRK) ist ein Utility-Token, der entwickelt wurde, um dezentrale KI-Ökosysteme zu unterstützen. Er ermöglicht Nutzern den Zugang zu KI-Tools, die Teilnahme an der Governance und das Erhalten von Belohnungen für die Unterstützung und Verbesserung des Netzwerks.
+        </p>
+        <h3 class="text-xl font-semibold mt-4 mb-2">Warum ihn verwenden?</h3>
+        <ul class="list-disc list-inside text-lg">
+          <li>Bezahlen von KI-Diensten und Automatisierung</li>
+          <li>Belohnungen durch Staking und Beiträge verdienen</li>
+          <li>Abstimmen über KI-Entwicklung und Community-Vorschläge</li>
+          <li>Teil einer transparenten, dezentralen KI-Zukunft sein</li>
+        </ul>
+        <h3 class="text-xl font-semibold mt-4 mb-2">Spark verbindet Menschen und KI</h3>
+        <p class="text-lg">
+          SPRK überbrückt die Kluft zwischen KI und Gemeinschaften — es gibt Nutzern echtes Eigentum, Wahlfreiheit und Anreize, nicht Konzernen.
+        </p>
+      </div>
+      <div class="text-center">
+        <a href="https://t.me/SPRKcoin2025" target="_blank" rel="noopener noreferrer" class="bg-yellow-400 text-black px-6 py-3 text-lg rounded-xl hover:bg-yellow-500 transition-colors inline-block">
+          Jetzt beitreten
+        </a>
+      </div>
+    </div>
+
+    <!-- Spanish Content -->
+    <div class="lang-content" data-lang="es">
+      <h1 class="text-5xl font-bold text-center text-yellow-400 animate-fade-in">SparkCoin</h1>
+      <div class="bg-gray-800 bg-opacity-75 p-6 rounded-lg shadow-lg mt-6 animate-slide-up">
+        <h2 class="text-2xl font-semibold mb-4">Descripción de SparkCoin</h2>
+        <p class="text-lg">
+          SparkCoin es un token ERC-20 implementado en la blockchain Base (solución L2 de Optimism) diseñado para su uso dentro del ecosistema descentralizado Spark. El contrato incluye mecanismos de staking con una tasa de recompensa variable que se adapta automáticamente a la cantidad de liquidez en staking. Los usuarios pueden recibir recompensas por staking, participar en votaciones de DAO e interactuar con servicios internos. El proyecto utiliza IPFS para almacenar documentación técnica y mensajes cifrados. El token está integrado con Aerodrome DEX para proporcionar liquidez AMM y comercio en el mercado. También implementa límites de volumen de transacciones, gestión flexible del pool de recompensas y mecanismos de seguridad integrados (ReentrancyGuard, Pausable).
+        </p>
+      </div>
+      <div class="bg-gray-800 bg-opacity-75 p-6 rounded-lg shadow-lg mt-6 animate-slide-up">
+        <h2 class="text-2xl font-semibold mb-4">¿Qué es Spark (SPRK)?</h2>
+        <p class="text-lg">
+          Spark (SPRK) es un token de utilidad diseñado para impulsar ecosistemas de inteligencia artificial descentralizados. Permite a los usuarios acceder a herramientas de IA, participar en la gobernanza y obtener recompensas por apoyar y mejorar la red.
+        </p>
+        <h3 class="text-xl font-semibold mt-4 mb-2">¿Por qué usarlo?</h3>
+        <ul class="list-disc list-inside text-lg">
+          <li>Pagar por servicios de IA y automatización</li>
+          <li>Ganar recompensas mediante staking y contribuciones</li>
+          <li>Votar en el desarrollo de IA y propuestas de la comunidad</li>
+          <li>Ser parte de un futuro de IA transparente y descentralizado</li>
+        </ul>
+        <h3 class="text-xl font-semibold mt-4 mb-2">Spark conecta a las personas con la IA</h3>
+        <p class="text-lg">
+          SPRK cierra la brecha entre la IA y las comunidades, otorgando a los usuarios propiedad real, elección e incentivos, no a las corporaciones.
+        </p>
+      </div>
+      <div class="text-center">
+        <a href="https://t.me/SPRKcoin2025" target="_blank" rel="noopener noreferrer" class="bg-yellow-400 text-black px-6 py-3 text-lg rounded-xl hover:bg-yellow-500 transition-colors inline-block">
+          Únete ahora
+        </a>
+      </div>
+    </div>
+
+    <!-- Social Links -->
+    <div class="flex justify-center gap-6 mt-10 text-3xl flex-wrap">
+      <div class="social-link">
+        <a href="https://t.me/SPRKcoin2025" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-telegram-plane hover:text-blue-400 transition-colors"></i>
+        </a>
+        <span class="lang-label" data-lang="en">Telegram</span>
+        <span class="lang-label" data-lang="ru" style="display: none;">Телеграм</span>
+        <span class="lang-label" data-lang="de" style="display: none;">Telegram</span>
+        <span class="lang-label" data-lang="es" style="display: none;">Telegram</span>
+      </div>
+      <div class="social-link">
+        <a href="https://x.com/BartMr82219" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-x-twitter hover:text-gray-300 transition-colors"></i>
+        </a>
+        <span class="lang-label" data-lang="en">X</span>
+        <span class="lang-label" data-lang="ru" style="display: none;">X</span>
+        <span class="lang-label" data-lang="de" style="display: none;">X</span>
+        <span class="lang-label" data-lang="es" style="display: none;">X</span>
+      </div>
+      <div class="social-link">
+        <a href="https://aerodrome.finance/pools/?token0=0x5897040e2bdc84dd81bd7ee0e6edfdb4188b5790&chain0=8453&token1=eth&chain1=8453" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-exchange-alt hover:text-green-400 transition-colors"></i>
+        </a>
+        <span class="lang-label" data-lang="en">Exchange and Buy SPRK</span>
+        <span class="lang-label" data-lang="ru" style="display: none;">Обмен и покупка SPRK</span>
+        <span class="lang-label" data-lang="de" style="display: none;">Tauschen und Kaufen SPRK</span>
+        <span class="lang-label" data-lang="es" style="display: none;">Intercambiar y comprar SPRK</span>
+      </div>
+      <div class="social-link">
+        <a href="https://aerodrome.finance/pools/?token0=eth&chain0=8453&token1=0x5897040e2bdc84dd81bd7ee0e6edfdb4188b5790&chain1=8453" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-exchange-alt hover:text-green-400 transition-colors"></i>
+        </a>
+        <span class="lang-label" data-lang="en">Exchange and Buy SPRK</span>
+        <span class="lang-label" data-lang="ru" style="display: none;">Обмен и покупка SPRK</span>
+        <span class="lang-label" data-lang="de" style="display: none;">Tauschen und Kaufen SPRK</span>
+        <span class="lang-label" data-lang="es" style="display: none;">Intercambiar y comprar SPRK</span>
+      </div>
+      <div class="social-link">
+        <a href="https://basescan.org/address/0x5897040e2bdC84Dd81Bd7eE0E6edFdB4188B5790#tokentxns" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-file-contract hover:text-yellow-400 transition-colors"></i>
+        </a>
+        <span class="lang-label contract-label" data-lang="en">SparkCoin Contract</span>
+        <span class="lang-label contract-label" data-lang="ru" style="display: none;">Контракт СпаркКоин</span>
+        <span class="lang-label contract-label" data-lang="de" style="display: none;">SparkCoin Vertrag</span>
+        <span class="lang-label contract-label" data-lang="es" style="display: none;">Contrato SparkCoin</span>
+      </div>
+      <div class="social-link">
+        <a href="https://ipfs.io/ipfs/bafkreignrnyet54jv43afm7b7cj7w4d5memy425yipbjzmqidzj7qx746u" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-image hover:text-purple-400 transition-colors"></i>
+        </a>
+        <span class="lang-label logo-label" data-lang="en">Spark Token Logo</span>
+        <span class="lang-label logo-label" data-lang="ru" style="display: none;">Логотип токена Spark</span>
+        <span class="lang-label logo-label" data-lang="de" style="display: none;">Spark-Token-Logo</span>
+        <span class="lang-label logo-label" data-lang="es" style="display: none;">Logotipo del token Spark</span>
+      </div>
+      <div class="social-link">
+        <a href="https://ipfs.io/ipfs/bafkreiha33esorirkdpczky2ylllnuileac65i55p42bba64eqbcx4hz6m" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-file-alt hover:text-orange-400 transition-colors"></i>
+        </a>
+        <span class="lang-label manifesto-label" data-lang="en">Spark Manifesto</span>
+        <span class="lang-label manifesto-label" data-lang="ru" style="display: none;">Манифест Spark</span>
+        <span class="lang-label manifesto-label" data-lang="de" style="display: none;">Spark-Manifest</span>
+        <span class="lang-label manifesto-label" data-lang="es" style="display: none;">Manifiesto Spark</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Language switcher logic
+    const buttons = document.querySelectorAll('.lang-btn');
+    const contents = document.querySelectorAll('.lang-content');
+    const labels = document.querySelectorAll('.lang-label');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const lang = button.getAttribute('data-lang');
+        
+        // Update button styles
+        buttons.forEach(btn => {
+          btn.classList.remove('bg-yellow-500', 'text-black');
+          btn.classList.add('bg-gray-700', 'text-white');
+        });
+        button.classList.remove('bg-gray-700', 'text-white');
+        button.classList.add('bg-yellow-500', 'text-black');
+
+        // Show selected language content
+        contents.forEach(content => {
+          content.classList.remove('active');
+          if (content.getAttribute('data-lang') === lang) {
+            content.classList.add('active');
+          }
+        });
+
+        // Show selected language labels for social links
+        labels.forEach(label => {
+          label.style.display = label.getAttribute('data-lang') === lang ? 'block' : 'none';
+        });
+      });
+    });
+  </script>
+
+  <style>
+    /* Animation styles */
+    .animate-fade-in {
+      animation: fadeIn 0.8s ease-in;
+    }
+    .animate-slide-up {
+      animation: slideUp 0.8s ease-in 0.2s;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</body>
+</html>
